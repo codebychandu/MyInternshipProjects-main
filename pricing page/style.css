@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #5222d0;
+    background-image: linear-gradient(45deg, #162107 0%, #5b60ec 100%);
+}
+
+.header{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 3px solid black;
+    text-shadow: 3px 3px 9px black;
+    color: #d2c9c9;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #162107;
+    
+}
+.pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: auto;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+
+.card-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.card-header {
+    margin: 1rem;
+    text-align: center;
+}
+
+.card-wrapper:hover .card-header>h2 {
+    transform: scale(1.1);
+    color: #5222d0;
+    letter-spacing: 2;
+}
+
+.card-header>img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-detail>p {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.check {
+    color: #5222d0;
+}
+
+.nocheck {
+    color: #ec615b;
+}
+
+.card-detail>p:hover {
+
+    background-color: #d5d5d5;
+}
+
+
+.card-price {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.card-price>p {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.card-price>p>sup,
+.card-price>p>sub {
+    font-size: 1rem;
+}
+
+.card-button {
+    padding: 0.6rem 3rem;
+    border: 2px solid #5222d0;
+    background-color: #5222d0;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 50ms ease-in;
+}
+
+.card-button:hover {
+    border: 2px slid #ec615b;
+    background-color: transparent;
+    color: #ec615b;
+    font-weight: 800;
+}
